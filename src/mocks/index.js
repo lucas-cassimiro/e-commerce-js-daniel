@@ -1,0 +1,58 @@
+import TShirt from "/t-shirt.png";
+
+export const products = [
+  {
+    id: 1,
+    image: TShirt,
+    name: "Camiseta Dev em Dobro",
+    category: "Camiseta",
+    color: "roxa",
+    size: "M",
+    price: 89,
+  },
+  {
+    id: 2,
+    image: TShirt,
+    name: "Camiseta Dev em Dobro",
+    category: "Camiseta",
+    color: "preta",
+    size: "M",
+    price: 89,
+  },
+  {
+    id: 3,
+    image: TShirt,
+    name: "Caneca Dev em Dobro",
+    category: "Caneca",
+    color: "branca",
+    size: null,
+    price: 29,
+  },
+  {
+    id: 4,
+    image: TShirt,
+    name: "Camiseta Dev em Dobro",
+    category: "Camiseta",
+    color: "preta",
+    size: "G",
+    price: 89,
+  },
+  {
+    id: 5,
+    image: TShirt,
+    name: "Caneca Dev em Dobro",
+    category: "Caneca",
+    color: "branca",
+    size: null,
+    price: 29,
+  },
+  {
+    id: 6,
+    image: TShirt,
+    name: "Camiseta Dev em Dobro",
+    category: "Camiseta",
+    color: "roxa",
+    size: "P",
+    price: 89,
+  },
+];
