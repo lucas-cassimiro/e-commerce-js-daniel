@@ -1,9 +1,9 @@
 import { products } from "../../mocks"
-import { CardProduct } from "../CardProduct"
+import { CardProduct } from "../../components/CardProduct"
 
 import { Main } from "./styles"
 
-export const MainPage = () => {
+export const Home = () => {
   return (
     <section className="container">
       <h1>Produtos</h1>

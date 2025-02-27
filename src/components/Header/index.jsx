@@ -1,5 +1,7 @@
-import { HeaderContainer } from "./styles";
-import Logo from "/logo.png";
+import { HeaderContainer } from "./styles"
+import Logo from "/logo.png"
+import IconCart from '/icon-cart.png'
+import { Link } from "react-router-dom"
 
 const menu = [
   { name: "Home", href: "/" },
@@ -14,22 +16,24 @@ export const Header = () => {
     <HeaderContainer>
       <div className='container'>
         <div>
-          <img src={Logo} alt="Logo da empresa Dev em Dobro" />
+          <Link to='/'>
+            <img src={Logo} alt="Logo da empresa Dev em Dobro" />
+          </Link>
 
           <nav>
             <ul>
               {menu.map((menu, index) => (
                 <li key={index}>
-                  <a href={menu.href}>{menu.name}</a>
+                  <Link to={menu.href}>{menu.name}</Link>
                 </li>
               ))}
             </ul>
           </nav>
           <div>
-            <a>Entrar ou cadastrar-se</a>
-            <a>
-              <img src="" alt="" />
-            </a>
+            <Link to='/login'>Entrar ou cadastrar-se</Link>
+            <Link to='/cart'>
+              <img src={IconCart} alt="Ícone do carrinho de compras" />
+            </Link>
           </div>
         </div>
       </div>
